@@ -1,0 +1,110 @@
+.site-footer {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 48px 20px 32px;
+}
+
+.site-footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.site-footer__logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+
+.site-footer__wordmark-group {
+  text-align: left;
+}
+
+.site-footer__wordmark {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+}
+
+.site-footer__tagline {
+  margin: 2px 0 0;
+  font-family: var(--font-script);
+  font-size: 1.2rem;
+  color: var(--gold-light);
+}
+
+.site-footer__icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  background: rgba(251, 246, 236, 0.08);
+  border: 1px solid rgba(217, 182, 92, 0.4);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.site-footer__icon-link:hover,
+.site-footer__icon-link:focus-visible {
+  background: rgba(217, 182, 92, 0.2);
+  border-color: var(--gold-light);
+  transform: translateY(-3px);
+}
+
+.site-footer__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.site-footer__copyright {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--cream);
+}
+
+.site-footer__crafted {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gold-light);
+}
+
+@media (min-width: 768px) {
+  .site-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .site-footer__meta {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
