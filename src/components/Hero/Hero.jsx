@@ -8,7 +8,7 @@ function Hero() {
 
       <div className="hero__content">
         <span className="hero__badge fade-up">
-          <span aria-hidden="true">✨</span> Coming Soon
+          <span aria-hidden="true">✨</span> We are open for orders
         </span>
 
         <img
